@@ -82,24 +82,28 @@
 
     <build>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>exec-maven-plugin</artifactId>-->
+<!--                <version>3.1.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>java</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <mainClass>agents.multitool.DatacompassApplication</mainClass>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <version>3.2.0</version>
                 <configuration>
-                    <mainClass>com.google.adk.dev.AdkDevServer</mainClass>
-                    <arguments>
-                        <argument>--server.port=8080</argument>
-                        <argument>--adk.agents.package-scan=agents.multitool.llmAgents</argument>
-                        <argument>--logging.level.com.google.adk=DEBUG</argument>
-                    </arguments>
+                    <mainClass>com.google.adk.web.AdkWebServer</mainClass>
+                    <classpathScope>compile</classpathScope>
                 </configuration>
             </plugin>
         </plugins>
