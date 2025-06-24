@@ -106,6 +106,9 @@ mvn exec:java
 
 Then visit: **http://localhost:8080**
 
+## Deployed project URL: 
+Go to [https://datacompass-463086862501.us-central1.run.app/dev-ui?app=CompanyAnalysisWorkflow]
+
 ##  Example Queries
 
 > **"Analyze a company called CloudScale. We’re Series B, cloud computing, and earn $6M in revenue."**
